@@ -1,0 +1,98 @@
+.content-mainSection {
+    display: flex;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.content-leftSection {
+    margin-left: 28px;
+}
+
+.product-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.main-image img {
+    width: 40rem;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+    border-color: #007185;
+    /* Amazon's color scheme */
+}
+
+.thumbnail.active {
+    border-color: #ff9900;
+    /* Highlight selected thumbnail */
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.content-rightSection {
+    color: black;
+    margin-left: 25rem;
+}
+
+.content-rightSection h1 {
+    color: #007cba;
+    
+}
+
+.content-rightSection p {
+    font-size: 20px;
+    margin: 15px 36px 15px 0;
+    color: #4b5563;
+    ;
+}
+
+@media screen and (max-width: 800px) {
+    .content-mainSection {
+        flex-direction: column;
+    }
+
+    .product-view-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main-image img {
+        width: 22rem;
+    }
+
+    .content-rightSection {
+        margin-left: 2rem;
+    }
+}
