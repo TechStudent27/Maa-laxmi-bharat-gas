@@ -24,16 +24,16 @@ export function Stove() {
 export function SteelStove() {
   const histarImages = [
     `/histar.jpg`,
-    `/histar.jpg`,
-    `/histar.jpg`,
-    `/histar.jpg`,
+    `/img/histar1.jpg`,
+    `/img/histar2.jpg`,
+    `/img/histar3.jpg`,
   ];
 
   const JupiterImages = [
-    `/histar.jpg`,
-    `/histar.jpg`,
-    `/histar.jpg`,
-    `/histar.jpg`,
+    `/img/jupiter1.jpg`,
+    `/img/jupiter2.jpg`,
+    `/img/jupiter4.jpg`,
+    `/img/jupiter5.jpg`,
   ];
 
   return (
