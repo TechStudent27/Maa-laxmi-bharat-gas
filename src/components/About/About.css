@@ -1,0 +1,15 @@
+
+.about-section-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 75px;
+    margin: 20px 22rem;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 31%);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+    text-align: center;
+}
+
+.about-section-content {
+    color: #525050;
+}

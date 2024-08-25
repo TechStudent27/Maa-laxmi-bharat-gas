@@ -20,7 +20,7 @@ body {
 
 header {
   background: #007cba;
-  border-top: 19px solid #fde000;
+  border-top: 20px solid #fde000;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -36,7 +36,7 @@ header {
 
 .rightNav ul {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   font-size: 22px;
 }
 

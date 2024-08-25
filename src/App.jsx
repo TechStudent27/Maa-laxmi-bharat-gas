@@ -1,5 +1,4 @@
 import "./App.css";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Contact from "./components/Contact/Contact";
@@ -12,6 +11,8 @@ import {
 } from "./Products/Regulator/Regulator";
 import Pipe from "./Products/GasPipe/Pipe";
 import { Lighter, NormalLigher, FireLighter } from "./Products/Lighter/Lighter";
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<CardHome />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/stove" element={<Stove />} />
           <Route path="/steelstove" element={<SteelStove />} />
@@ -32,6 +34,7 @@ function App() {
           <Route path="/normallighter" element={<NormalLigher />} />
           <Route path="/firelighter" element={<FireLighter />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

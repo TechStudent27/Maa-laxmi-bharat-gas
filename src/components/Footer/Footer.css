@@ -1,0 +1,46 @@
+
+footer {
+    background-color: #f9f9f9;
+    height: 95px;
+    color: #000;
+    font-weight: 400;
+    margin-top: auto;
+    
+}
+
+.footer {
+    padding-top: 15px;
+    padding-left: 18px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+/* .footer-img {
+    height: 33px;
+    border-radius: 50%;
+} */
+
+.termsandcondition{
+    font-size: 7px;
+    color: #898686;
+}
+
+@media screen and (max-width: 800px) {
+
+    footer {
+        height: 132px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .Copyright-footer {
+        margin-left: 0;
+    }
+
+}
