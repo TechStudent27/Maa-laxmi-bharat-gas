@@ -45,43 +45,83 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form-container">
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <label htmlFor="mobile">Mobile Number</label>
-        <input
-          type="tel"
-          id="mobile"
-          value={mobile}
-          onChange={(e) => setMobile(e.target.value)}
-          required
-        />
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      {status && <p>{status}</p>}
+    <div className="contact-form-main-container">
+      <div className="contact-form-container">
+        <h2>Contact Us</h2>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <label htmlFor="mobile">Mobile Number</label>
+          <input
+            type="tel"
+            id="mobile"
+            value={mobile}
+            onChange={(e) => setMobile(e.target.value)}
+            required
+          />
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        {status && <p>{status}</p>}
+      </div>
+
+      <div className="contact-form-container">
+        <h2>For Enqury</h2>
+        <div className="enquiry-page-container">
+          <div className="enquiry-details">
+            <img className="enquiry-img" src="/phone.png" alt="" />
+            <div className="enquiry-data">
+              <h4>
+                Phone: <span>07743292211</span>{" "}
+              </h4>
+            </div>
+          </div>
+          <div className="enquiry-details">
+            <img className="enquiry-img" src="/email.png" alt="" />
+            <div className="enquiry-data">
+              <h4>
+                Email: <span>maalaxmibharatgas1@gmail.com</span>{" "}
+              </h4>
+            </div>
+          </div>
+          <div className="enquiry-details">
+            <img className="enquiry-img" src="/location.png" alt="" />
+            <div className="enquiry-data">
+              <h4>
+                Location:{" "}
+                <span>Maa Laxmi Bharat Gas Agency, Salhewara, dist- KCG</span>{" "}
+              </h4>
+            </div>
+          </div>
+          <div className="enquiry-details">
+            <div className="enquiry-data">
+              <h4>
+                <span>feel free to contect us</span>{" "}
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
