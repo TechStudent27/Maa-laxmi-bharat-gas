@@ -85,8 +85,8 @@ const Contact = () => {
         {status && <p>{status}</p>}
       </div>
 
-      <div className="contact-form-container">
-        <h2>For Enqury</h2>
+      <div className="contact-form-container enquiry-main-container">
+        <h2>For Enquiry</h2>
         <div className="enquiry-page-container">
           <div className="enquiry-details">
             <img className="enquiry-img" src="/phone.png" alt="" />
@@ -116,7 +116,7 @@ const Contact = () => {
           <div className="enquiry-details">
             <div className="enquiry-data">
               <h4>
-                <span>feel free to contect us</span>{" "}
+                <span>feel free to contact us</span>{" "}
               </h4>
             </div>
           </div>
